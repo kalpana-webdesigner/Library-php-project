@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+@font-face {
+    font-family: "Font Awesome 6 Brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(../webfonts/fa-brands-400.woff2) format("woff2"),
+         url(../webfonts/fa-brands-400.ttf) format("truetype");
+}
+.user_profile{
+    width:30px;
+    border-radius: 100%;
+}
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+   font-style: normal;
+   background: #f5f5f5;
+}
+:root{
+    --offcanvas-width:270px;
+    --offcanvas-height:56px;
+}
+.sidebar-nav{
+width:var(--offcanvas-width)!important; /*to control the sidebar width */
+}
+
+/* Smooth transition for the arrow rotation */
+.sidebar-link .right-icon {
+    transition: transform 0.5s ease;
+}
+
+/* Rotate the arrow when the menu is expanded */
+.sidebar-link[aria-expanded="true"] .right-icon i {
+    transform: rotate(180deg);
+}
+
+ /*Desktop media query to adjust the nav bar top margin*/
+@media(min-width:992px){
+    .sidebar-nav{
+        transform: none!important;
+        visibility: visible!important;
+    --offcanvas-height:56px;
+        top:var(--offcanvas-height)!important;
+        
+    }
+
+}@media(min-width:992px){
+    .navbar-toggler.d-lg-none {
+    display: none;
+
+}
+main{
+    margin-left: var(--offcanvas-width)!important;
+}
+.offcanvas-header .btn-close, #offcanvasExampleLabel{
+    display: none;
+}
+}
+@media(max-width:480px){
+    .dashboard-counts .card{
+        margin-top: 10px;
+    }
+    .dashboard-tabs .nav-tabs .nav-link{
+        font-size: 12px;
+        padding:5px;
+        font-weight: bold;
+    }
+}
+
+
+  
