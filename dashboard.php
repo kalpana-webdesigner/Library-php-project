@@ -6,6 +6,7 @@
 
 
 include_once('config/config.php');
+include_once('config/database.php');
 
 include_once(DIR_URL . 'include/header.php');
 include_once(DIR_URL . 'include/top-nav.php');
@@ -14,13 +15,15 @@ include_once(DIR_URL . 'include/sidebar.php');
 
 
     <!--Main Content starts-->
-    <main class="mt-2 pt-2">
-        <div class="container-fluid">
-          <!--cards-->
-          <div class="row">
-            <div class="col-md-12">
-              <h4 class="text-uppercase fw-bold">Dashboard</h4>
-              <p>Satistics of the system</p>
+   <!--Main Container Start-->
+<main class="mt-5 pt-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 my-3">
+                <h4 class="fw-bold text-uppercase">Dashboard</h4>
+                <p>Statistics of the system!</p>
+            </div>
+
               <div class="row  dashboard-counts">
               <div class="col-md-3">
 

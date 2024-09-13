@@ -1,6 +1,7 @@
 <?php 
 
 include_once('./config/config.php');
+include_once('./config/database.php');
 
 include_once(DIR_URL . 'include/header.php');
 
